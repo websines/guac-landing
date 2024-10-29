@@ -20,7 +20,7 @@ const tokenomicsData = [
   {
     title: "Distribution",
     icon: PieChartIcon,
-    content: "Total Supply: 1,000,000,000 $GUAC",
+    content: "Total Supply: 10,000,000 $GUAC",
     funFact: "That's enough $GUAC for every avocado toast in Brooklyn!",
     chart: [
       { name: "Liquidity Pool", value: 50, color: "#4CAF50" },
@@ -29,17 +29,17 @@ const tokenomicsData = [
       { name: "Community Rewards", value: 15, color: "#FF5722" },
     ],
   },
-  {
-    title: "Taxes",
-    icon: Coins,
-    content: "5% Buy Tax | 5% Sell Tax",
-    funFact: "Our taxes are lower than the cost of extra guac at Chipotle!",
-    details: [
-      "2% to Liquidity Pool",
-      "2% to Marketing Wallet",
-      "1% to Community Rewards",
-    ],
-  },
+  // {
+  //   title: "Taxes",
+  //   icon: Coins,
+  //   content: "5% Buy Tax | 5% Sell Tax",
+  //   funFact: "Our taxes are lower than the cost of extra guac at Chipotle!",
+  //   details: [
+  //     "2% to Liquidity Pool",
+  //     "2% to Marketing Wallet",
+  //     "1% to Community Rewards",
+  //   ],
+  // },
   {
     title: "Liquidity",
     icon: DollarSign,
