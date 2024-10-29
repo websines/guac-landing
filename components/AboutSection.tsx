@@ -46,8 +46,8 @@ const GuacAbout = () => {
             <Image
               src="/img_03.png"
               alt="$GUAC mascot"
-              width={800}
-              height={800}
+              width={640}
+              height={640}
               className="rounded-lg  mx-auto"
             />
           </motion.div>
