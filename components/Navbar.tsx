@@ -87,7 +87,9 @@ const GuacNavbar = () => {
                 <NavItem href="#about">About</NavItem>
                 <NavItem href="#why-guac">Why $GUAC</NavItem>
                 <NavItem href="#tokenomics">Tokenomics</NavItem>
-                <NavItem href="#buy">Buy on KSPR Bot</NavItem>
+                <NavItem href="https://t.me/kspr_home_bot?start=WdRcvw">
+                  Buy on KSPR Bot
+                </NavItem>
               </NavigationMenuList>
             </NavigationMenu>
           </ul>

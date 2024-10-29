@@ -23,8 +23,13 @@ const socialLinks = [
     href: "https://discord.gg/PvGVz388",
     color: "bg-blue-500",
   },
-  { name: "KSPR Bot", icon: DollarSign, href: "#", color: "bg-green-500" },
-  { name: "Chart", icon: BarChart2, href: "#", color: "bg-yellow-400" },
+  {
+    name: "KSPR Bot",
+    icon: DollarSign,
+    href: "https://t.me/kspr_home_bot?start=WdRcvw",
+    color: "bg-green-500",
+  },
+  // { name: "Chart", icon: BarChart2, href: "#", color: "bg-yellow-400" },
 ];
 
 const GuacSocial = () => {
