@@ -93,7 +93,8 @@ const GuacNavbar = () => {
           </ul>
         </div>
         <Link
-          href="#buy"
+          target="_blank"
+          href="https://t.me/kspr_home_bot?start=WdRcvw"
           className="px-8 w-[70%] sm:w-auto py-4 bg-green-600 rounded-lg text-white font-semibold hover:bg-green-700 text-sm transition duration-200 ease-in-out hover:scale-105 flex flex-row items-center justify-center"
         >
           Buy $GUAC
@@ -126,7 +127,10 @@ const GuacNavbar = () => {
                   <OverlayNavItem href="#tokenomics" number="04">
                     Tokenomics
                   </OverlayNavItem>
-                  <OverlayNavItem href="#buy" number="05">
+                  <OverlayNavItem
+                    href="https://t.me/kspr_home_bot?start=WdRcvw"
+                    number="05"
+                  >
                     Buy on KSPR Bot
                   </OverlayNavItem>
                 </ul>

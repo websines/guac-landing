@@ -2,11 +2,27 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { BarChart2, DollarSign } from "lucide-react";
-import { FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import { FaTwitter, FaTelegramPlane, FaDiscord } from "react-icons/fa";
 
 const socialLinks = [
-  { name: "Twitter", icon: FaTwitter, href: "#", color: "bg-blue-400" },
-  { name: "Telegram", icon: FaTelegramPlane, href: "#", color: "bg-blue-500" },
+  {
+    name: "Twitter",
+    icon: FaTwitter,
+    href: "https://x.com/CobbEsteba33165",
+    color: "bg-blue-400",
+  },
+  {
+    name: "Telegram",
+    icon: FaTelegramPlane,
+    href: "https://t.me/guactoken",
+    color: "bg-blue-500",
+  },
+  {
+    name: "Discord",
+    icon: FaDiscord,
+    href: "https://discord.gg/PvGVz388",
+    color: "bg-blue-500",
+  },
   { name: "KSPR Bot", icon: DollarSign, href: "#", color: "bg-green-500" },
   { name: "Chart", icon: BarChart2, href: "#", color: "bg-yellow-400" },
 ];

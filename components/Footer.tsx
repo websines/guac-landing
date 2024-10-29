@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { FaTwitter, FaTelegram, FaDiscord, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
-  { name: "Twitter", icon: FaTwitter, href: "#" },
-  { name: "Telegram", icon: FaTelegram, href: "#" },
-  { name: "Discord", icon: FaDiscord, href: "#" },
+  { name: "Twitter", icon: FaTwitter, href: "https://x.com/CobbEsteba33165" },
+  { name: "Telegram", icon: FaTelegram, href: "https://t.me/guactoken" },
+  { name: "Discord", icon: FaDiscord, href: "https://discord.gg/PvGVz388" },
   { name: "Github", icon: FaGithub, href: "#" },
 ];
 
