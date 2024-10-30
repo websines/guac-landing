@@ -20,11 +20,11 @@ const faqItems = [
     answer:
       "You can buy $GUAC on KSPR Bot. Make sure you have some KASPA in your wallet, connect to KSPR Bot, and swap KASPA for $GUAC. Always double-check the contract address to ensure you're getting the real $GUAC!",
   },
-  {
-    question: "Is $GUAC safe?",
-    answer:
-      "While $GUAC is designed with fun in mind, we take security seriously. Our contract is audited, and liquidity is locked. However, always remember that crypto investments carry risks, so only invest what you can afford to lose.",
-  },
+  // {
+  //   question: "Is $GUAC safe?",
+  //   answer:
+  //     "While $GUAC is designed with fun in mind, we take security seriously. Our contract is audited, and liquidity is locked. However, always remember that crypto investments carry risks, so only invest what you can afford to lose.",
+  // },
   {
     question: "What makes $GUAC different from other meme tokens?",
     answer:
@@ -43,7 +43,7 @@ const faqItems = [
 
 const GuacFAQ = () => {
   return (
-    <section className="py-16 bg-green-50">
+    <section className="py-16 bg-green-50" id="faq">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

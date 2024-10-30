@@ -34,7 +34,7 @@ const aboutPoints = [
 
 const GuacAbout = () => {
   return (
-    <section className="py-16 bg-green-50 overflow-hidden">
+    <section className="py-16 bg-green-50 overflow-hidden" id="about">
       <div className="container mx-auto px-4 w-[80%]">
         <div className="flex flex-col md:flex-row items-center justify-center">
           <motion.div

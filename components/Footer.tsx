@@ -82,10 +82,7 @@ const GuacFooter = () => {
           <p>
             &copy; {new Date().getFullYear()} $GUAC Token. All rights reserved.
           </p>
-          <p className="mt-2 text-sm">
-            Disclaimer: $GUAC is a meme token for entertainment purposes. Always
-            invest responsibly.
-          </p>
+          <p className="mt-2 text-sm">Disclaimer: Not an investment vehicle.</p>
         </motion.div>
       </div>
     </footer>
