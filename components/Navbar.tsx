@@ -85,7 +85,7 @@ const GuacNavbar = () => {
               <NavigationMenuList>
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="#about">About</NavItem>
-                <NavItem href="#why-guac">Why $GUAC</NavItem>
+                <NavItem href="#faq">Why $GUAC</NavItem>
                 <NavItem href="#roadmap">Roadmap</NavItem>
                 <NavItem href="https://t.me/kspr_home_bot?start=WdRcvw">
                   Buy on KSPR Bot
@@ -117,21 +117,38 @@ const GuacNavbar = () => {
               <div className="h-[10%] sm:h-[20%] bg-transparent" />
               <div className="flex flex-col sm:mt-4 justify-start items-start p-4 w-full sm:w-[40%]">
                 <ul className="text-xl font-semibold w-full">
-                  <OverlayNavItem href="/" number="01">
+                  <OverlayNavItem
+                    href="/"
+                    number="01"
+                    onClick={() => setOverlayOpen(false)}
+                  >
                     Home
                   </OverlayNavItem>
-                  <OverlayNavItem href="#about" number="02">
+                  <OverlayNavItem
+                    href="#about"
+                    number="02"
+                    onClick={() => setOverlayOpen(false)}
+                  >
                     About
                   </OverlayNavItem>
-                  <OverlayNavItem href="#why-guac" number="03">
+                  <OverlayNavItem
+                    href="#faq"
+                    number="03"
+                    onClick={() => setOverlayOpen(false)}
+                  >
                     Why $GUAC
                   </OverlayNavItem>
-                  <OverlayNavItem href="#roadmap" number="04">
+                  <OverlayNavItem
+                    href="#roadmap"
+                    number="04"
+                    onClick={() => setOverlayOpen(false)}
+                  >
                     Roadmap
                   </OverlayNavItem>
                   <OverlayNavItem
                     href="https://t.me/kspr_home_bot?start=WdRcvw"
                     number="05"
+                    onClick={() => setOverlayOpen(false)}
                   >
                     Buy on KSPR Bot
                   </OverlayNavItem>
@@ -165,12 +182,14 @@ const OverlayNavItem = ({
   href,
   number,
   children,
+  onClick,
 }: {
   href: string;
   number: string;
   children: React.ReactNode;
+  onClick: () => void;
 }) => (
-  <Link href={href}>
+  <Link href={href} onClick={onClick}>
     <li className="p-4 hover:bg-green-500 hover:bg-opacity-25 rounded-xl w-full flex flex-row items-baseline space-x-3">
       <span className="text-sm font-semibold">{number}. </span>
       <span className="font-bold tracking-wide">{children}</span>
