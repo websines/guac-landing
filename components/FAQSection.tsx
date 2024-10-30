@@ -18,7 +18,7 @@ const faqItems = [
   {
     question: "How can I buy $GUAC?",
     answer:
-      "You can buy $GUAC on KSPR Bot. Make sure you have some ETH in your wallet, connect to KSPR Bot, and swap ETH for $GUAC. Always double-check the contract address to ensure you're getting the real $GUAC!",
+      "You can buy $GUAC on KSPR Bot. Make sure you have some KASPA in your wallet, connect to KSPR Bot, and swap KASPA for $GUAC. Always double-check the contract address to ensure you're getting the real $GUAC!",
   },
   {
     question: "Is $GUAC safe?",
@@ -32,8 +32,7 @@ const faqItems = [
   },
   {
     question: "Are there any fees when trading $GUAC?",
-    answer:
-      "Yes, there's a 5% buy and sell tax. 2% goes to the liquidity pool, 2% to our marketing wallet for continued growth, and 1% is distributed as rewards to our loyal hodlers.",
+    answer: "No!",
   },
   {
     question: "How can I get involved in the $GUAC community?",
