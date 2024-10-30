@@ -1,7 +1,8 @@
 import GuacHero from "@/components/HeroSection";
 import GuacNavbar from "@/components/Navbar";
 import GuacSocial from "@/components/SocialLinks";
-import GuacTokenomics from "@/components/Tokenomics";
+// import GuacTokenomics from "@/components/Tokenomics";
+import GuacRoadmap from "@/components/Roadmap";
 import GuacAbout from "@/components/AboutSection";
 import GuacFAQ from "@/components/FAQSection";
 import GuacFooter from "@/components/Footer";
@@ -11,7 +12,8 @@ export default function Home() {
       <GuacNavbar />
       <GuacHero />
       <GuacSocial />
-      <GuacTokenomics />
+      {/* <GuacTokenomics /> */}
+      <GuacRoadmap />
       <GuacAbout />
       <GuacFAQ />
       <GuacFooter />

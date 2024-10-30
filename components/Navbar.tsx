@@ -86,7 +86,7 @@ const GuacNavbar = () => {
                 <NavItem href="/">Home</NavItem>
                 <NavItem href="#about">About</NavItem>
                 <NavItem href="#why-guac">Why $GUAC</NavItem>
-                <NavItem href="#tokenomics">Tokenomics</NavItem>
+                <NavItem href="#roadmap">Roadmap</NavItem>
                 <NavItem href="https://t.me/kspr_home_bot?start=WdRcvw">
                   Buy on KSPR Bot
                 </NavItem>
@@ -126,8 +126,8 @@ const GuacNavbar = () => {
                   <OverlayNavItem href="#why-guac" number="03">
                     Why $GUAC
                   </OverlayNavItem>
-                  <OverlayNavItem href="#tokenomics" number="04">
-                    Tokenomics
+                  <OverlayNavItem href="#roadmap" number="04">
+                    Roadmap
                   </OverlayNavItem>
                   <OverlayNavItem
                     href="https://t.me/kspr_home_bot?start=WdRcvw"

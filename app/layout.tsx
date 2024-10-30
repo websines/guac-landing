@@ -6,7 +6,7 @@ const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "$GUAC",
-  description: "Guac Token",
+  description: "Tastiest Token on the planet",
 };
 
 export default function RootLayout({

@@ -13,7 +13,7 @@ const socialLinks = [
 
 const footerLinks = [
   { name: "About", href: "#about" },
-  { name: "Tokenomics", href: "#tokenomics" },
+  { name: "Roadmap", href: "#roadmap" },
   { name: "FAQ", href: "#faq" },
   { name: "Buy $GUAC", href: "#buy" },
 ];
