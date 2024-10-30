@@ -6,6 +6,7 @@ import GuacRoadmap from "@/components/Roadmap";
 import GuacAbout from "@/components/AboutSection";
 import GuacFAQ from "@/components/FAQSection";
 import GuacFooter from "@/components/Footer";
+import GuacChatbot from "@/components/chatbot/Chatbot";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       <GuacRoadmap />
       <GuacAbout />
       <GuacFAQ />
+      <GuacChatbot />
       <GuacFooter />
     </>
   );
