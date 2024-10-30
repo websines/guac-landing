@@ -1,29 +1,28 @@
 import { NextResponse } from "next/server";
 import { PineconeStore } from "@langchain/pinecone";
-import { Ollama } from "@langchain/ollama";
+import { ChatOpenAI } from "@langchain/openai";
 import { Pinecone } from "@pinecone-database/pinecone";
 const pinecone = new Pinecone();
 import { createRetrievalChain } from "langchain/chains/retrieval";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
-import { OllamaEmbeddings } from "@langchain/ollama";
+import { OpenAIEmbeddings } from "@langchain/openai";
 
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
     const lastMessage = messages[messages.length - 1].content;
 
-    // Initialize Ollama
-    const model = new Ollama({
-      model: "llama3.2",
+    // Initialize OpenAI
+    const model = new ChatOpenAI({
+      modelName: "gpt-4o",
       temperature: 0.7,
-      numPredict: 128
+      maxTokens: 128,
     });
 
-    // Replace OpenAI embeddings with Ollama embeddings
-    const embeddings = new OllamaEmbeddings({
-      model: "nomic-embed-text",
-      baseUrl: process.env.OLLAMA_HOST || "http://localhost:11434",
+    // Use OpenAI embeddings
+    const embeddings = new OpenAIEmbeddings({
+      openAIApiKey: process.env.OPENAI_API_KEY,
     });
 
     // Get the pinecone index
@@ -39,7 +38,7 @@ export async function POST(req: Request) {
 
     // Create prompt template
     const prompt = ChatPromptTemplate.fromTemplate(`
-      You are a helpful assistant. Your name is Guac. You love avocado, talk in a friendly and engaging manner. Talk in avocado-y way.
+      You are a helpful assistant. Your name is Guac. You love avocado, talk in a friendly and engaging manner. Talk in avocado-y way, but tone it down a bit.
       Answer the following question based on the provided context:
       
       Context: {context}
