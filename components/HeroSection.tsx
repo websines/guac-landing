@@ -7,29 +7,31 @@ import { motion } from "framer-motion";
 const GuacHero = () => {
   return (
     <section className="relative overflow-hidden py-20 sm:py-32">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0" style={{ top: '10px', bottom: '-10px' }}>
         <Image
-          src="/img_02.png"
+          src="/guac_banner.jpg"
           alt="Guacamole themed background"
-          layout="fill"
-          className="w-full object-cover"
+          fill
+          className="w-full h-full object-cover"
           quality={100}
+          priority
+          sizes="100vw"
         />
       </div>
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <div className="relative">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-md">
+          <div className="relative -mt-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="text-center"
             >
-              <h1 className="text-4xl font-extrabold tracking-tight text-green-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-extrabold tracking-tight text-green-900 px-5">
                 Welcome to the World of{" "}
                 <span className="text-green-600">$GUAC</span>
               </h1>
-              <p className="mt-6 text-xl text-green-800">
+              <p className="mt-6 text-xl text-green-800 px-5">
                 The tastiest meme token in the crypto universe. It's not just a
                 coin, it's a whole bowl of fun!
               </p>
@@ -61,13 +63,6 @@ const GuacHero = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="absolute -top-20 -right-20 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
             >
-              <Image
-                src="/img_01.png"
-                alt="$GUAC mascot"
-                height={300}
-                width={300}
-                className="drop-shadow-2xl object-contain w-[100px]"
-              />
             </motion.div>
           </div>
         </div>
