@@ -7,6 +7,7 @@ import GuacAbout from "@/components/AboutSection";
 import GuacFAQ from "@/components/FAQSection";
 import GuacFooter from "@/components/Footer";
 import GuacChatbot from "@/components/chatbot/Chatbot";
+import GuacSwapSection from "@/components/SwapInfoSection";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
       {/* <GuacTokenomics /> */}
       <GuacRoadmap />
       <GuacAbout />
+      <GuacSwapSection />
       <GuacFAQ />
       <GuacChatbot />
       <GuacFooter />
