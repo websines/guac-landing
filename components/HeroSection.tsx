@@ -20,10 +20,10 @@ const GuacHero = () => {
       </div>
       <div className="container relative z-10 mx-auto px-4 sm:px-6">
         <div className="mx-auto max-w-md">
-          <div className="relative -mt-20">
+          <div className="relative -mt-20 sm:-mt-25">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 8 }}
               transition={{ duration: 0.5 }}
               className="text-center"
             >
