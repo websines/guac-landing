@@ -8,7 +8,7 @@ const socialLinks = [
   {
     name: "Twitter",
     icon: FaTwitter,
-    href: "https://x.com/CobbEsteba33165",
+    href: "https://x.com/GuacKrc20",
     color: "bg-blue-400",
   },
   {
