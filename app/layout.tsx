@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/api/opengraph-image",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
       },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "Tastiest KRC20 Token on the planet",
     images: [
       {
-        url: "/api/twitter-image",
+        url: "/twitter-image",
         width: 1200,
         height: 630,
       },
