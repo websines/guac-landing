@@ -69,7 +69,7 @@ export default async function Image() {
         {
           name: "Space_Grotesk",
           data: await fetch(
-            "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+            "https://fonts.googleapis.com/s/spacegrotest/v13/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXsrPMBTTA.woff"
           ).then((res) => res.arrayBuffer()),
           weight: 400,
           style: "normal",
