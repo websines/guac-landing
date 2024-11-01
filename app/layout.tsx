@@ -8,10 +8,10 @@ const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.guac.site"),
   title: "$GUAC",
-  description: "Tastiest KRC20 Token on the planet",
+  description: "Launch, Mint , and Grow on KRC20",
   openGraph: {
     title: "$GUAC",
-    description: "Tastiest KRC20 Token on the planet",
+    description: "Launch, Mint , and Grow on KRC20",
     type: "website",
     locale: "en_US",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "$GUAC",
-    description: "Tastiest KRC20 Token on the planet",
+    description: "Launch, Mint , and Grow on KRC20",
     images: [
       {
         url: "/twitter-image",

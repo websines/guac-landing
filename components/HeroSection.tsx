@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 const GuacHero = () => {
   return (
     <section className="relative overflow-hidden py-20 sm:py-32">
-      <div className="absolute inset-0 z-0" style={{ top: '10px', bottom: '-10px' }}>
+      <div
+        className="absolute inset-0 z-0"
+        style={{ top: "10px", bottom: "-10px" }}
+      >
         <Image
           src="/guac_banner.jpg"
           alt="Guacamole themed background"
@@ -32,8 +35,7 @@ const GuacHero = () => {
                 <span className="text-green-600">$GUAC</span>
               </h1>
               <p className="mt-6 text-xl text-green-800 px-5">
-                The tastiest meme token in the crypto universe. It's not just a
-                coin, it's a whole bowl of fun!
+                The simple way to launch, track and grow your Token on KRC-20.
               </p>
             </motion.div>
 
@@ -62,8 +64,7 @@ const GuacHero = () => {
               animate={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
               className="absolute -top-20 -right-20 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
-            >
-            </motion.div>
+            ></motion.div>
           </div>
         </div>
       </div>

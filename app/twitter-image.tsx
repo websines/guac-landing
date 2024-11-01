@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "$GUAC - Tastiest KRC20 Token";
+export const alt = "$GUAC - Launch, Mint , and Grow on KRC20";
 export const size = {
   width: 1200,
   height: 630,
@@ -39,7 +39,7 @@ export default function Image() {
           }}
         />
         <div style={{ fontWeight: "bold" }}>$GUAC</div>
-        <div style={{ fontSize: "48px" }}>Tastiest KRC20 Token</div>
+        <div style={{ fontSize: "48px" }}>Launch, Mint , and Grow on KRC20</div>
       </div>
     ),
     {
