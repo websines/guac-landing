@@ -6,6 +6,7 @@ import "./globals.css";
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.guac.site"),
   title: "$GUAC",
   description: "Tastiest KRC20 Token on the planet",
   openGraph: {
