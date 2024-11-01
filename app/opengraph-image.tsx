@@ -13,7 +13,7 @@ export const size = {
 // Add these configurations
 export const contentType = "image/png";
 
-export default async function Image() {
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -26,7 +26,7 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           padding: "40px",
-          fontFamily: "Space_Grotesk",
+          fontFamily: "system-ui",
         }}
       >
         <img
@@ -65,16 +65,6 @@ export default async function Image() {
         "Content-Type": "image/png",
         "Cache-Control": "public, max-age=31536000, immutable",
       },
-      fonts: [
-        {
-          name: "Space_Grotesk",
-          data: await fetch(
-            "https://fonts.googleapis.com/s/spacegrotest/v13/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXsrPMBTTA.woff"
-          ).then((res) => res.arrayBuffer()),
-          weight: 400,
-          style: "normal",
-        },
-      ],
     }
   );
 }
