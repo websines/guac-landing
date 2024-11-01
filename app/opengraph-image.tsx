@@ -13,7 +13,7 @@ export const size = {
 // Add these configurations
 export const contentType = "image/png";
 
-export default async function Image() {
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -29,13 +29,25 @@ export default async function Image() {
           padding: "40px",
         }}
       >
-        <div style={{ fontSize: "160px" }}>🥑</div>
+        <img
+          src="https://www.guac.site/img_04.png"
+          alt="GUAC"
+          style={{
+            width: "200px",
+            height: "200px",
+            marginBottom: "20px",
+          }}
+        />
         <div style={{ fontWeight: "bold" }}>$GUAC</div>
         <div style={{ fontSize: "48px" }}>Tastiest KRC20 Token</div>
       </div>
     ),
     {
       ...size,
+      headers: {
+        "Content-Type": "image/png",
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
     }
   );
 }

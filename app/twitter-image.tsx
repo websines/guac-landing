@@ -1,15 +1,19 @@
 import { ImageResponse } from "next/og";
 
-export const contentType = "image/png";
+// Route segment config
 export const runtime = "edge";
 
+// Image metadata
 export const alt = "$GUAC - Tastiest KRC20 Token";
 export const size = {
   width: 1200,
   height: 630,
 };
 
-export default async function Image() {
+// Add these configurations
+export const contentType = "image/png";
+
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -25,13 +29,25 @@ export default async function Image() {
           padding: "40px",
         }}
       >
-        <div style={{ fontSize: "160px" }}>🥑</div>
+        <img
+          src="https://www.guac.site/img_04.png"
+          alt="GUAC"
+          style={{
+            width: "200px",
+            height: "200px",
+            marginBottom: "20px",
+          }}
+        />
         <div style={{ fontWeight: "bold" }}>$GUAC</div>
         <div style={{ fontSize: "48px" }}>Tastiest KRC20 Token</div>
       </div>
     ),
     {
       ...size,
+      headers: {
+        "Content-Type": "image/png",
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
     }
   );
 }
