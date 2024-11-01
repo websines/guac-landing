@@ -13,12 +13,11 @@ export const size = {
 // Add these configurations
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
   return new ImageResponse(
     (
       <div
         style={{
-          fontSize: 128,
           background: "linear-gradient(to bottom, #00ff87, #60efff)",
           width: "100%",
           height: "100%",
@@ -27,19 +26,37 @@ export default function Image() {
           alignItems: "center",
           justifyContent: "center",
           padding: "40px",
+          fontFamily: "Space_Grotesk",
         }}
       >
         <img
           src="https://www.guac.site/img_04.png"
           alt="GUAC"
           style={{
-            width: "200px",
-            height: "200px",
-            marginBottom: "20px",
+            width: "400px",
+            height: "400px",
+            marginBottom: "30px",
           }}
         />
-        <div style={{ fontWeight: "bold" }}>$GUAC</div>
-        <div style={{ fontSize: "48px" }}>Launch, Mint , and Grow on KRC20</div>
+        <div
+          style={{
+            fontSize: "72px",
+            fontWeight: "bold",
+            marginBottom: "10px",
+          }}
+        >
+          $GUAC
+        </div>
+        <div
+          style={{
+            fontSize: "36px",
+            textAlign: "center",
+            maxWidth: "800px",
+            lineHeight: "1.2",
+          }}
+        >
+          Launch, Mint, and Grow on KRC20
+        </div>
       </div>
     ),
     {
@@ -48,6 +65,16 @@ export default function Image() {
         "Content-Type": "image/png",
         "Cache-Control": "public, max-age=31536000, immutable",
       },
+      fonts: [
+        {
+          name: "Space_Grotesk",
+          data: await fetch(
+            "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+          ).then((res) => res.arrayBuffer()),
+          weight: 400,
+          style: "normal",
+        },
+      ],
     }
   );
 }
