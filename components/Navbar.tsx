@@ -149,8 +149,15 @@ const GuacNavbar = () => {
                     Roadmap
                   </OverlayNavItem>
                   <OverlayNavItem
-                    href="https://t.me/kspr_home_bot?start=WdRcvw"
+                    href="https://guac.fyi"
                     number="05"
+                    onClick={() => setOverlayOpen(false)}
+                  >
+                    Explorer
+                  </OverlayNavItem>
+                  <OverlayNavItem
+                    href="https://t.me/kspr_home_bot?start=WdRcvw"
+                    number="06"
                     onClick={() => setOverlayOpen(false)}
                   >
                     Buy on KSPR Bot
