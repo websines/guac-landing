@@ -20,7 +20,7 @@ const socialLinks = [
   {
     name: "Discord",
     icon: FaDiscord,
-    href: "https://discord.gg/PvGVz388",
+    href: "https://discord.gg/d2QzKP5r8j",
     color: "bg-blue-500",
   },
   {
