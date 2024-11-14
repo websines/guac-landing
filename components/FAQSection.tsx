@@ -18,7 +18,7 @@ const faqItems = [
   {
     question: "How can I buy $GUAC?",
     answer:
-      "You can buy $GUAC on KSPR Bot. Make sure you have some KASPA in your wallet, connect to KSPR Bot, and swap KASPA for $GUAC. Always double-check the contract address to ensure you're getting the real $GUAC!",
+      "You can buy $GUAC on Guac Swap. Make sure you have some KASPA in your wallet, connect to Guac Swap, and swap KASPA for $GUAC. Visit GUAC Swap to get started!",
   },
   // {
   //   question: "Is $GUAC safe?",

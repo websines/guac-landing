@@ -24,9 +24,9 @@ const socialLinks = [
     color: "bg-blue-500",
   },
   {
-    name: "KSPR Bot",
+    name: "GUAC Swap",
     icon: DollarSign,
-    href: "https://t.me/kspr_home_bot?start=WdRcvw",
+    href: "https://swap.guac.fyi/token/guac",
     color: "bg-green-500",
   },
   // { name: "Chart", icon: BarChart2, href: "#", color: "bg-yellow-400" },

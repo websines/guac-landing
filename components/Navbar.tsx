@@ -90,8 +90,8 @@ const GuacNavbar = () => {
                 <NavItem href="https://guac.fyi">
                   Explorer
                 </NavItem>
-                <NavItem href="https://t.me/kspr_home_bot?start=WdRcvw">
-                  Buy on KSPR Bot
+                <NavItem href="https://swap.guac.fyi/token/guac">
+                  Buy on GUAC Swap
                 </NavItem>
               </NavigationMenuList>
             </NavigationMenu>
@@ -99,7 +99,7 @@ const GuacNavbar = () => {
         </div>
         <Link
           target="_blank"
-          href="https://t.me/kspr_home_bot?start=WdRcvw"
+          href="https://swap.guac.fyi/token/guac"
           className="px-8 w-[70%] sm:w-auto py-4 bg-green-600 rounded-lg text-white font-semibold hover:bg-green-700 text-sm transition duration-200 ease-in-out hover:scale-105 flex flex-row items-center justify-center"
         >
           Buy $GUAC
@@ -156,11 +156,11 @@ const GuacNavbar = () => {
                     Explorer
                   </OverlayNavItem>
                   <OverlayNavItem
-                    href="https://t.me/kspr_home_bot?start=WdRcvw"
+                    href="https://swap.guac.fyi/token/guac"
                     number="06"
                     onClick={() => setOverlayOpen(false)}
                   >
-                    Buy on KSPR Bot
+                    Buy on GUAC Swap
                   </OverlayNavItem>
                 </ul>
               </div>
