@@ -6,7 +6,7 @@ import { FaTwitter, FaTelegram, FaDiscord, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
   { name: "Twitter", icon: FaTwitter, href: "https://x.com/GuacKrc20" },
-  { name: "Telegram", icon: FaTelegram, href: "https://t.me/guactoken" },
+  { name: "Telegram", icon: FaTelegram, href: "https://t.me/guac_swap" },
   { name: "Discord", icon: FaDiscord, href: "https://discord.gg/d2QzKP5r8j" },
   { name: "Github", icon: FaGithub, href: "#" },
 ];

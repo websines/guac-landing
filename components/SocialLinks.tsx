@@ -14,7 +14,7 @@ const socialLinks = [
   {
     name: "Telegram",
     icon: FaTelegramPlane,
-    href: "https://t.me/guactoken",
+    href: "https://t.me/guac_token",
     color: "bg-blue-500",
   },
   {
