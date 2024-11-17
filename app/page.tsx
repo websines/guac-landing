@@ -37,7 +37,7 @@ export default function Component() {
     <div className="min-h-screen bg-white text-gray-900 flex flex-col">
       <header className="bg-green-50 py-4">
         <div className="container mx-auto px-4 flex items-center">
-          <img src="/img_03.png" alt="GUAC Token Logo" className="w-16 h-16 mr-4" />
+          <img src="/img_04.png" alt="GUAC Token Logo" className="w-16 h-16 mr-4" />
           <div>
             <h1 className="text-3xl font-bold text-green-600">GUAC Token</h1>
             <p className="text-lg text-green-700">The tastiest token on Kaspa</p>
