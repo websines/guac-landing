@@ -16,7 +16,7 @@ const socialLinks = [
 
 const tokens = [
   { symbol: "KAS", logo: "/KAS.png" },
-  { symbol: "GUAC", logo: "/img_03.png" },
+  { symbol: "GUAC", logo: "/img_04.png" },
   { symbol: "ALIEN", logo: "/placeholder.svg" },
 ]
 
