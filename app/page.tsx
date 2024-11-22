@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 
 const socialLinks = [
   { name: "Twitter", icon: FaTwitter, href: "https://x.com/GuacSwapKRC20", color: "bg-blue-400" },
-  { name: "Telegram", icon: FaTelegramPlane, href: "https://t.me/guac_token", color: "bg-blue-500" },
+  { name: "Telegram", icon: FaTelegramPlane, href: "https://t.me/guac_swap", color: "bg-blue-500" },
   { name: "Discord", icon: FaDiscord, href: "https://discord.gg/d2QzKP5r8j", color: "bg-indigo-600" },
   { name: "GUAC Swap", icon: ArrowRightLeft, href: "https://swap.guac.fyi/", color: "bg-green-500" },
 ]
