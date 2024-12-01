@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import { ArrowUpDown, ArrowRightLeft } from 'lucide-react'
-import { FaTwitter, FaTelegramPlane, FaDiscord } from "react-icons/fa"
+import { FaTwitter, FaTelegramPlane, FaDiscord, FaMedium } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -12,6 +12,7 @@ const socialLinks = [
   { name: "Telegram", icon: FaTelegramPlane, href: "https://t.me/guac_swap", color: "bg-blue-500" },
   { name: "Discord", icon: FaDiscord, href: "https://discord.gg/d2QzKP5r8j", color: "bg-indigo-600" },
   { name: "GUAC Swap", icon: ArrowRightLeft, href: "https://swap.guac.fyi/", color: "bg-green-500" },
+  { name: "Medium", icon: FaMedium, href: "https://medium.com/@GuacKrc20", color: "bg-gray-800" },
 ]
 
 const tokens = [
@@ -106,6 +107,14 @@ export default function Component() {
                 <li>Minimalistic and stylish interface</li>
                 <li>Fast and efficient token swaps</li>
               </ul>
+              <Button
+                className="mt-4 bg-green-600 hover:bg-green-700 text-white"
+                asChild
+              >
+                <a href="/GuacSwapWhitepaper.pdf" target="_blank" rel="noopener noreferrer">
+                  View Whitepaper
+                </a>
+              </Button>
             </div>
 
             <div className="bg-green-50 p-6 rounded-lg shadow-md">
@@ -123,7 +132,7 @@ export default function Component() {
         </div>
 
         <section className="mt-24">
-          <h2 className="text-2xl font-semibold mb-4 text-center mt-24">Join Our Community</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center mt-24">Quick Links</h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {socialLinks.map((link) => (
               <a
